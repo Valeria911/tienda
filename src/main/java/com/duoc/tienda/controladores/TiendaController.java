@@ -21,7 +21,7 @@ public class TiendaController {
         return servicio.listarProductos();
     }
 
-    @GetMapping("/productos/{id}")
+    @GetMapping("/producto/{id}")
     public ProductoDto verProducto(@PathVariable Long id) {
         return servicio.verProducto(id);
     }
