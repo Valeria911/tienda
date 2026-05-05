@@ -16,8 +16,8 @@ ENV TNS_ADMIN=/app/Wallet_tienda
 # Copia el JAR generado en el contenedor
 COPY target/tienda-0.0.1-SNAPSHOT.jar app.jar
 
-# Expone el puerto 8081 porque usuario tiene 8080
-EXPOSE 8081
+# Expone el puerto 8082
+EXPOSE 8082
 
 # Comando para ejecutar la aplicación cuando el contenedor arranque
 ENTRYPOINT ["java", "-jar", "app.jar"]
